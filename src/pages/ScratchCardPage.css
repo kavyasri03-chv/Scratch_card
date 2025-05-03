@@ -1,4 +1,3 @@
-/* Full black background and layout */
 .scratch-container {
     display: flex;
     flex-direction: column;
@@ -49,7 +48,6 @@
     margin-top: 8px;
   }
   
-  /* Center scratch card */
   .scratch-card-center {
     display: flex;
     justify-content: start;
@@ -66,7 +64,6 @@
     cursor: pointer;
   }
   
-  /* Scratch content */
   .scratch-content-layer {
     width: 100%;
     height: 100%;
@@ -87,7 +84,6 @@
     pointer-events: none;
   }
   
-  /* Beautiful result card */
   .reveal-amount {
     position: absolute;
     top: 70%;
@@ -124,7 +120,6 @@
     }
   }
   
-  /* Improved form styling */
   .winner-form {
     margin-top: 30px;
     background: rgba(255, 255, 255, 0.08);
