@@ -49,26 +49,34 @@ const ScratchCardPage = () => {
       </div>
 
       {!showForm && (
-        <div className="scratch-card-center">
-          <div className="scratch-card-wrapper">
-            <ScratchCard
-              width={300}
-              height={300}
-              image="/images/qr.png"
-              finishPercent={40}
-              onComplete={handleScratchComplete}
-              brushSize={20}
-            >
-              <div className="scratch-content-layer">
-                {revealed && (
-                  <div className="reveal-amount">
-                    <h2>🎉 You won ₹{prize}</h2>
-                  </div>
-                )}
-              </div>
-            </ScratchCard>
+        <>
+          
+          <div className="scratch-card-center">
+            <div className="scratch-card-wrapper">
+              <ScratchCard
+                width={300}
+                height={300}
+                image="/images/qr1.png"
+                finishPercent={40}
+                onComplete={handleScratchComplete}
+                brushSize={20}
+              >
+                <div className="scratch-content-layer">
+                  {revealed && (
+                    <div className="reveal-amount">
+                      <h2>🎉 You won ₹{prize}</h2>
+                    </div>
+                  )}
+                </div>
+              </ScratchCard>
+            </div>
           </div>
-        </div>
+          <p className="scratch-description">
+            <p className="xx">Scratch & Win! </p><br />
+            Try your luck with our scratch card! Unbelievable offers and discounts are just a scratch away. 
+            Your fortunate deal awaits - give it a go!
+          </p>
+        </>
       )}
 
       {showForm && (
